@@ -1,0 +1,12 @@
+.loginDetail{
+    margin-bottom:264px ;
+}
+
+.deco{
+    margin-top: 60px ;
+
+    @include mobile{
+        margin-top: 24px ;
+
+    }
+}

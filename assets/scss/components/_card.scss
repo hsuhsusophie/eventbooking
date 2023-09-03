@@ -1,0 +1,47 @@
+.card {
+    background: #F3F1E5;
+    border: 0;
+
+    .card-date {
+        border-bottom: 3px solid $dark;
+    }
+
+    .card-img-top {
+        height: 255px;
+        object-fit: cover;
+
+        @include mobile {
+            height: 210px;
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        .card-title {
+            font-weight: bold;
+
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .card-btn {
+        padding: 12px 0;
+        border-top: 3px solid $dark;
+        border-bottom: 3px solid $dark;
+
+        @include mobile {
+            padding: 8px 0;
+        }
+    }
+}
+
+.link-icon {
+    width: 24px;
+
+    @include mobile {
+        width: 20px;
+    }
+}

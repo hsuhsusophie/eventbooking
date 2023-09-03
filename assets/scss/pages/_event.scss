@@ -1,0 +1,24 @@
+.list-item {
+    border: 1px solid $dark;
+    border-left: 4px solid $dark;
+
+    &:hover {
+        background: $dark;
+        color: #fff;
+        border: none;
+        border-left: 4px solid $warning;
+    }
+
+    .item-link:hover {
+        color: inherit;
+    }
+}
+
+.page-item {
+    width: 40px;
+    height: 40px;
+
+    .page-link {
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7TAO 活動訂票網</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="../assets/images/icofont/icofont.min.css">
+  <link rel="stylesheet" href="../assets//scss/all.scss">
+</head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+   
+    <section class="processOne mt-top d-flex flex-column">
+     
+
+          <div class="loginDetail container">
+              <div class="row text-center">
+                  <div class=" col-8 col-sm-6 col-lg-4 mx-auto" data-aos="fade-up">
+                      <img src="../assets/images/sparkler.png" alt="sparkler" class="deco">
+                      <h3 class="fs-5 fw-bolder mb-4">會員登入</h3>
+                      
+                      <form class="needs-validation" novalidate>
+                          <div class="mb-4 text-start">
+                              <label for="inputAccount" class="form-label font-content mb-2 ">帳號</label>
+                              <input type="text" class="form-control text-light border border-dark border-2 py-2 ps-4 bg-transparent font-content" id="inputAccount" placeholder="請輸入帳號" required>
+                              
+                              <div class="invalid-feedback font-content">
+                                  請輸入帳號
+                              </div>
+                          </div>
+                          <div class="mb-lg-7 mb-6 text-start">
+                            <label for="inputPassword" class="form-label font-content mb-2 ">密碼</label>
+                            <input type="password" class="form-control text-light border border-dark border-2 py-2 ps-4 bg-transparent font-content" id="inputPassword" placeholder="請輸入密碼" required>
+                            
+                            <div class="invalid-feedback font-content">
+                              請輸入密碼
+                            </div>
+                          </div>
+                          
+                            <button class="btn btn-dark w-100 py-2 fs-6 font-content submitBtn " type="submit">登入<i
+                              class="icofont-double-right mb-1"></i></button>
+                          
+                        </form>
+                  </div>
+
+              </div>
+
+
+          </div>
+
+
+
+
+  </section>
+
+
+
+    <%- include('./layout/footer'); -%>
+    <%- include('./layout/aos'); -%>
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
