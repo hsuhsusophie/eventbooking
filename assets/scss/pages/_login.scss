@@ -1,12 +1,19 @@
-.loginDetail{
-    margin-bottom:264px ;
+.loginDetail {
+    margin-bottom: 264px;
 }
 
-.deco{
-    margin-top: 60px ;
+.deco {
+    margin-top: 60px;
 
-    @include mobile{
-        margin-top: 24px ;
+    @include mobile {
+        margin-top: 24px;
 
+    }
+}
+
+
+.submitBtn {
+    @include mobile {
+        margin: auto;
     }
 }

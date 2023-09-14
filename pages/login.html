@@ -19,7 +19,7 @@
     <section class="processOne mt-top d-flex flex-column">
      
 
-          <div class="loginDetail container">
+          <div class="loginDetail container" novalidate>
               <div class="row text-center">
                   <div class=" col-8 col-sm-6 col-lg-4 mx-auto" data-aos="fade-up">
                       <img src="../assets/images/sparkler.png" alt="sparkler" class="deco">
@@ -48,23 +48,25 @@
                           
                         </form>
                   </div>
-
               </div>
-
-
           </div>
-
-
-
-
   </section>
-
 
 
     <%- include('./layout/footer'); -%>
     <%- include('./layout/aos'); -%>
-
-
     <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+            <script>
+              // 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+              // 將該元素加入 class 'was-validated'
+              $('.needs-validation').each(function (index) {
+                  $(this).on('submit', function (e) {
+                      e.preventDefault();
+                      $(this).addClass('was-validated');
+                  });
+              });
+          </script>      
   </body>
 </html>
